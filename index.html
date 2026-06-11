@@ -1,10 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>KP Balaji</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KP Balaji</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Inter, system-ui, sans-serif;
+    background: #0f172a;
+    color:white;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.bg{
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(circle at top left,#ec4899 0%,transparent 40%),
+    radial-gradient(circle at bottom right,#3b82f6 0%,transparent 40%);
+    opacity:.35;
+}
+
+.card{
+    position:relative;
+    z-index:10;
+    width:min(700px,90%);
+    padding:60px;
+    border-radius:24px;
+    backdrop-filter:blur(20px);
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    text-align:center;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 16px;
+    border-radius:999px;
+    background:rgba(255,255,255,.1);
+    margin-bottom:24px;
+}
+
+h1{
+    font-size:4rem;
+    margin-bottom:16px;
+}
+
+.highlight{
+    background:linear-gradient(90deg,#ec4899,#8b5cf6,#3b82f6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+p{
+    color:#cbd5e1;
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+.buttons{
+    margin-top:32px;
+    display:flex;
+    gap:16px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:14px 24px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.2s;
+}
+
+.primary{
+    background:white;
+    color:#0f172a;
+}
+
+.secondary{
+    border:1px solid rgba(255,255,255,.2);
+    color:white;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+</style>
 </head>
+
 <body>
-    <h1>Welcome to kpbalaji.xyz</h1>
-    <p>Website coming soon.</p>
+
+<div class="bg"></div>
+
+<div class="card">
+
+<div class="badge">
+🚀 Building the Future
+</div>
+
+<h1>Hi, I'm <span class="highlight">Balaji</span></h1>
+
+<p>
+Exploring AI, automation, business systems, partnerships,
+and operational leverage. Building tools and workflows that
+help people move faster and work smarter.
+</p>
+
+<div class="buttons">
+<a class="btn primary" href="mailto:hello@kpbalaji.xyz">
+Contact Me
+</a>
+
+<a class="btn secondary" href="https://n8n.kpbalaji.xyz">
+Projects
+</a>
+</div>
+
+</div>
+
 </body>
 </html>
